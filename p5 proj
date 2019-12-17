@@ -1,0 +1,181 @@
+//MINI README: Allow me to start out by addressing the huge column of identifying elements just below this paragraph. Yes, I'm aware this code probably could've been handled in a much more efficient and condensed way, and that I'm probably going to lose points because it isn't. Believe me, I spent more time than I'd like to admit trying to make this thing function, because I'm really, really, really not good at coding. And that says a lot, because the function of this code isn't even that spectacular. But allow me to explain the inspiration anyway.
+
+//I was heading to Drexel about two weeks back with the Rutgers Big Band. We all got on a bus and were shipped off to our destination to perform in a small little festival-type performance with other surrounding schools. By the time we were en route, it was just about the cusp of nighttime- the twilight of night and day was slowly succumbing to the darkness of the evening. And as we rode through the twisting, winding streets of Philly on this rickety old bus, I looked out to see the skyline, its various skyscrapers looking like some sort of gargantuan puzzle. Or maybe Tetris, I don't know. But the coolest part was that, as the sun was going down and the sky grew darker, I swear that one by one, the city lights were coming to life. I had managed to be around right during that sweet spot of the night when everyone decides it's dark enough to turn on their office lights, apartment lamps, and everything else.
+
+//And so, after a countless trials and errors with many other ideas for this project, I resorted back to something much more doable for me personally- the inspiring sight of a city skyline coming to life in the break of twilight.
+
+//If you take your mouse, hover over the moon, and click, the windows of the skyscrapers will all light up. I appologize if it's underwhelming, but with all of the time I spent trying to do this, I can say that I'm actually genuinely proud of it. :)
+
+let r;
+let r1;
+let r2;
+let r3;
+let r4;
+let r5;
+let r6;
+let r7;
+let r8;
+let r9;
+let r10;
+let r11;
+let r12;
+let r13;
+let r14;
+let r15;
+let r16;
+let r17;
+let r18;
+let r19;
+let r20
+//So all of these things above basically let the windows of the buildings be "legal" to Javascript. Every other way I tried to do this, it would yell at me.
+function setup() {
+  createCanvas(900, 750);
+  frameRate(1);
+  //frameRate refreshes the page slowly, therefore generating the stars slowly, otherwise they'd be flying past like meteors
+  r = (0, 0, 0)
+  r1 = (0, 0, 0)
+  r2 = (0, 0, 0)
+  r3 = (0, 0, 0)
+  r4 = (0, 0, 0)
+  r5 = (0, 0, 0)
+  r6 = (0, 0, 0)
+  r7 = (0, 0, 0)
+  r8 = (0, 0, 0)
+  r9 = (0, 0, 0)
+  r10 = (0, 0, 0)
+  r11 = (0, 0, 0)
+  r12 = (0, 0, 0)
+  r13 = (0, 0, 0)
+  r14 = (0, 0, 0)
+  r15 = (0, 0, 0)
+  r16 = (0, 0, 0)
+  r17 = (0, 0, 0)
+  r18 = (0, 0, 0)
+  r19 = (0, 0, 0)
+  r20 = (0, 0, 0)
+  //I tried to do something like "r1, r2, r3 = (0, 0, 0)" but it kept shooting back an error. This was the easiest way to do this, personally, without p5 complaining.
+}
+//So under draw are some of the components for the gradient function which will come into play later on in the code. The colors of the gradient, black and orange, are basically being established right here.
+function draw() {
+  background(220);
+  var color1 = color(0, 5, 20);
+  var color2 = color(244, 177, 0);
+  setGradient(0, 0, windowWidth, windowHeight, color1, color2, "Y");
+  for (var i = 0; i < 50; i++) {
+  var x = random(windowWidth);
+  var y = random(windowHeight-400);
+    //-400 keeps the stars from being too close to the bottom; in this case, I wanted the stars to really only be present in the blue of the sky and the gradient of the sky; you can't really stars during the daytime, can you?
+  noStroke();
+  fill(255, 255, 255);
+  ellipse(x, y, 2, 2);
+  fill(40, 40, 40);
+  rect(40, 400, 120, 400);
+  rect(200, 250, 120, 500);
+  rect(350, 500, 150, 300);
+  rect(550, 400, 120, 400);
+  rect(725, 450, 130, 500);
+  fill(50, 50, 52);
+  rect(100, 600, 120, 200);
+  rect(260, 550, 140, 200);
+  rect(450, 650, 150, 300);
+  rect(650, 550, 120, 400);
+  fill(r, 127);
+  rect(60, 420, 20, 40);
+  fill(r1, 127);
+  rect(120, 480, 20, 40);
+  fill(r2, 127);
+  rect(80, 540, 20, 40);
+  fill(r3, 127);
+  rect(220, 280, 20, 40);
+  fill(r4, 127);
+  rect(120, 620, 20, 40);
+  fill(r5, 127);
+  rect(180, 680, 20, 40);
+  fill(r6, 127);
+  rect(280, 380, 20, 40);
+  fill(r7, 127);
+  rect(220, 440, 20, 40);
+  fill(r8, 127);
+  rect(280, 580, 20, 40);
+  fill(r9, 127);
+  rect(360, 680, 20, 40);
+  fill(r10, 127);
+  rect(460, 520, 20, 40);
+  fill(r11, 127);
+  rect(410, 600, 20, 40);
+  fill(r12, 127);
+  rect(480, 680, 20, 40);
+  fill(r13, 127);
+  rect(570, 420, 20, 40);
+  fill(r14, 127);
+  rect(630, 500, 20, 40);
+  fill(r15, 127);
+  rect(570, 580, 20, 40);
+  fill(r16, 127);
+  rect(660, 560, 20, 40)
+  fill(r16, 127);
+  rect(740, 620, 20, 40)
+  fill(r17, 127);
+  rect(700, 680, 20, 40)
+  fill(r18, 127);
+  rect(820, 500, 20, 40)
+  fill(r19, 127);
+  rect(740, 460, 20, 40)
+  fill(r20, 127);
+  rect(780, 700, 20, 40)
+  fill(255, 255, 255)
+  ellipse(760, 150, 200, 200);
+}
+
+}
+
+// this part below is for when you click on the moon.
+function mousePressed() {
+  // the following stuff determines whether or not the mouse is over the moon. Contrary to what I had thought previously, the moon does not actually serve as a button; there's just this weird code that creates the illusion of it being so. The 760, 150 is the general point, and the d < 100 is how far of a radius from that point the mouse can be in that it will trigger the city window lights when the mouse is clicked.
+  let d = dist(mouseX, mouseY, 760, 150);
+  if (d < 100) {
+    //All of these set the building windows to white.
+    r = (255, 255, 255);
+    r1 = (255, 255, 255);
+    r2 = (255, 255, 255);
+    r3 = (255, 255, 255);
+    r4 = (255, 255, 255);
+    r5 = (255, 255, 255);
+    r6 = (255, 255, 255);
+    r7 = (255, 255, 255);
+    r8 = (255, 255, 255);
+    r9 = (255, 255, 255);
+    r10 = (255, 255, 255);
+    r11 = (255, 255, 255);
+    r12 = (255, 255, 255);
+    r13 = (255, 255, 255);
+    r14 = (255, 255, 255);
+    r15 = (255, 255, 255);
+    r16 = (255, 255, 255);
+    r17 = (255, 255, 255);
+    r18 = (255, 255, 255);
+    r19 = (255, 255, 255);
+    r20 = (255, 255, 255);
+  }
+}
+//All of this below is for the gradient. Yes, it's based off of an existing code. No, I didn't copy and paste it. I studied the existing code and actually managed to piece this together on my own, after dozens of errors.
+function setGradient(x, y, w, h, c1, c2, axis) {
+  noFill();
+  if (axis == "Y") {
+    for (let i = y; i <= y+h; i++) {
+      var inter = map(i, y, y+h, 0, 1);
+      var c = lerpColor(c1, c2, inter);
+      stroke(c);
+      line(x, i, x+w, i);
+    }
+  }
+  else if (axis == "X") {
+    for (let j = x; j <= x+w; j++) {
+      var inter2 = map(j, x, x+w, 0, 1);
+      var d = lerpColor(c1, c2, inter2);
+      //From what I'm lead to believe, lerpColor is basically responsible for blending the colors together.
+      stroke(d);
+      line(j, y, j, y+h);
+    }
+  }
+}
